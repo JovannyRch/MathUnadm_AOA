@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MathUnadm_AOA.Game"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Operaciones básicas (+, -, *)" />
+            <Image
+                Aspect="AspectFit"
+                HeightRequest="100"
+                Source="https://www.freeimageslive.co.uk/image/view/6996/_original" />
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Entry
+                    x:Name="operador1"
+                    Grid.Column="0"
+                    HorizontalTextAlignment="Center"
+                    IsReadOnly="True"
+                    Keyboard="Numeric" />
+                <Entry
+                    x:Name="operando"
+                    Grid.Column="1"
+                    HorizontalTextAlignment="Center"
+                    IsReadOnly="True"
+                    Keyboard="Numeric" />
+                <Entry
+                    x:Name="operador2"
+                    Grid.Column="2"
+                    HorizontalTextAlignment="Center"
+                    IsReadOnly="True"
+                    Keyboard="Numeric" />
+                <Label
+                    Grid.Column="3"
+                    HorizontalTextAlignment="Center"
+                    Text="="
+                    VerticalTextAlignment="Center" />
+                <Entry
+                    x:Name="userInput"
+                    Grid.Column="4"
+                    HorizontalTextAlignment="Center"
+                    Keyboard="Numeric" />
+            </Grid>
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button
+                    Grid.Column="0"
+                    BackgroundColor="LightGreen"
+                    Clicked="DispathEvaluar"
+                    Text="Evaluar" />
+                <Button
+                    Grid.Column="1"
+                    BackgroundColor="CadetBlue"
+                    Clicked="DispathGenerateRandomValues"
+                    Text="Siguiente" />
+                <Button
+                    Grid.Column="2"
+                    BackgroundColor="OrangeRed"
+                    Clicked="Exit"
+                    Text="Salir" />
+            </Grid>
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Text="Número de aciertos" />
+                <Entry
+                    x:Name="aciertos"
+                    Grid.Column="1"
+                    IsReadOnly="True"
+                    Keyboard="Numeric"
+                    Placeholder="" />
+            </Grid>
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Text="Número de fallos" />
+                <Entry
+                    x:Name="fallos"
+                    Grid.Column="1"
+                    IsReadOnly="True"
+                    Keyboard="Numeric"
+                    Placeholder="" />
+            </Grid>
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Text="Porcentaje de efectividad" />
+                <Entry
+                    x:Name="porcentaje"
+                    Grid.Column="1"
+                    IsReadOnly="True"
+                    Keyboard="Numeric"
+                    Placeholder="" />
+            </Grid>
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

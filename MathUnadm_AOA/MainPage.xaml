@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MathUnadm_AOA.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Label
+            FontAttributes="Bold"
+            FontSize="Large"
+            HorizontalOptions="Center"
+            Text="Entrenamiento Matemático" />
+
+
+        <Image
+            HeightRequest="200"
+            HorizontalOptions="Center"
+            Source="https://play-lh.googleusercontent.com/DfL56VfW87X16wfJ7VkFQEtcoBCnR57ucTRLa7JxlbzDFwYMM2x8xZA3_qHBstbr3A"
+            WidthRequest="200" />
+
+        <Label Text="Desarrollado por: Armando Olarte Ávila" />
+        <Label Text="Matrícula: ES202105032" />
+        <Label Text="Grupo: DS-DPMO-2401-B2-002" />
+        <Label Text="Unidad Didáctica: Unidad 2. Aplicaciones J2ME" />
+        <Label Text="Figura Académica: Verónica Espinoza Romo" />
+
+        <Button Clicked="Init" Text="Iniciar" />
+        <Button Clicked="ExitApp" Text="Salir" />
+
+        <StackLayout />
+
+    </StackLayout>
+</ContentPage>
